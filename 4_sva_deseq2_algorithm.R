@@ -49,12 +49,12 @@ plotMA(ressva_lfc, ylim = c(-8,8))
 resSig_1<- subset(ressva_1, padj < 0.05)
 head(ressva_1[ order(ressva_1$padj), ])
 ## go ahead and write csv
-write.csv(resSig_1, "/Users/beccabell/Documents/GitHub/GSE176480_covid/xx_Data_Files/SVA_sigfiicant_p05.csv")
+write.csv(resSig_1, "/Users/beccabell/RNASeq/https:/github.com/rebell90/Transcriptome_COVID_Control_GSE176480/xx_Data_Files/SVA_sigfiicant_p05.csv")
 
 resSig_lfc<- subset(ressva_lfc, padj < 0.1)
 head(ressva_lfc[ order(ressva_lfc$log2FoldChange), ])
 ## write csv
-write.csv(resSig_lfc, "/Users/beccabell/Documents/GitHub/GSE176480_covid/xx_Data_Files/SVA_sigfiicant_lfc1_p1.csv")
+write.csv(resSig_lfc, "/Users/beccabell/RNASeq/https:/github.com/rebell90/Transcriptome_COVID_Control_GSE176480/xx_Data_Files/SVA_sigfiicant_lfc1_p1.csv")
 
 
 ### in order to examine individual genes of significance, we are going to

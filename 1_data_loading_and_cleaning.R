@@ -11,10 +11,6 @@
 mem.maxNSize(nsize = Inf)
 mem.maxVSize(vsize = Inf)
 
-
-## set working directory
-setwd("/Users/beccabell/Documents/GitHub/GSE176480_covid/")
-
 ## download data from GEO
 GSE176480 <- getGEO("GSE176480")
 
@@ -49,7 +45,7 @@ rownames(GSE176480_col) <- GSE176480_col$title
 ##### COUNT MATRIX #####
 
 ## load data 
-GSE176480_counts <- fread("/Users/beccabell/Documents/GitHub/GSE176480_covid/xx_Data_Files/GSE176480_covidplatelet_featurecounts.txt")
+GSE176480_counts <- fread("/Users/beccabell/RNASeq/https:/github.com/rebell90/Transcriptome_COVID_Control_GSE176480/xx_Data_Files/GSE176480_covidplatelet_featurecounts.txt")
 # view data
 head(GSE176480_counts , 20)
 
